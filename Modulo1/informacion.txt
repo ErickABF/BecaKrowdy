@@ -1,0 +1,5 @@
+Los arcihovs se encuentra dentro de la red compartida y creada por linux, en este caso en la ruta.
+Red/wsl/ubuntu/home/*nombre_de_usuario_linux*/
+
+
+Mover de carpeta la informacion que tambien ayudaria par apoder encontrar los archivos mas rapido.
