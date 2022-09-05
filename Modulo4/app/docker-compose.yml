@@ -1,18 +1,23 @@
-version: "3"
+version: "3.9"
 
-services: 
-  web:
-    container_name: node-krowdy
+services:
+  mongo_db:
+    container_name: db_container
+    image: mongo:latest
     restart: always
+    volumes:
+      - mongo_db:/data/db
+  api:
     build: .
     ports:
-      - "8085:3000"
-    links:
-      - mongo
-    
-  mongo:
-    container_name: mongo-krowdy
-    image: mongo
-    ports:
-      - "8077:27017"
+      - 8085:3000
+    environment:
+      PORT: 3000
+      MONGODB_URI: mongodb://mongo_db:27017
+      DB_NAME: MY_DB
+      NAME: TrulyMittal
+    depends_on:
+      - mongo_db
 
+volumes:
+ mongo_db: {}
