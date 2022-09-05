@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
-FROM node:14
+FROM node:12-alpine
 WORKDIR /app
 COPY . .
-RUN yarn install
-CMD ["nodemon", "src/index.js"]
+RUN yarn install --production
+CMD ["yarn", "nodemon", "src/index.js"]
 EXPOSE 3000
