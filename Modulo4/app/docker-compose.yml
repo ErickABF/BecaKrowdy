@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  mongo:
+    container_name: mongo-krowdy
+    image: mongo
+    restart: always
+    volumes:
+      - mongo:/data/db
+    ports:
+      - "8077:27017"
+  api:
+    container_name: node-krowdy
+    build: .
+    ports:
+      - "8085:3000"
+    links:
+      - mongo
+volumes:
+ mongo: {}
