@@ -9,8 +9,6 @@ services:
       - "8085:3000"
     links:
       - mongo
-    volumes:
-      - .:/app
     
   mongo:
     container_name: mongo-krowdy
