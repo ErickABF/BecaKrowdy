@@ -11,12 +11,12 @@ app.use(bodyParser.json());
 app.use("/api", ProfileRouter);
 
 mongoose.connect(
-  "mongodb://mongo/example",
+  "mongodb://mongo_db/example",
   { useNewUrlParser: true },
   (err, res) => {
     err && console.log(`ERROR: Connecting to DB ${err}`);
     app.listen(3000, () =>
-      console.log("Node server running on http://mongo:3000")
+      console.log("Node server running on http://mongo_db:3000")
     );
   }
 );
