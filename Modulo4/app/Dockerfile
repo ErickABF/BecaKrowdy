@@ -3,5 +3,5 @@ FROM node:12-alpine
 WORKDIR /app
 COPY . .
 RUN yarn install --production
-CMD ["yarn", "nodemon", "src/index.js"]
+CMD ["yarn", "serve"]
 EXPOSE 3000
