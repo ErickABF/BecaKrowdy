@@ -7,6 +7,8 @@ services:
     restart: always
     volumes:
       - mongo_db:/data/db
+    ports:
+      - 8085:3000
   api:
     build: .
     ports:
