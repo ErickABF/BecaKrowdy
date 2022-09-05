@@ -3,6 +3,7 @@ version: "3"
 services: 
   web:
     container_name: node-krowdy
+    image: node:12-alpine
     restart: always
     build: .
     ports:
