@@ -1,0 +1,23 @@
+.nombre-pregunta{
+  background-color: pink;
+  height: 60px;
+  min-width: 210px;
+  justify-items: center;
+  text-align: center;
+  font-size: 14px;
+  border: 5px solid #708090;
+
+}
+/* .pregunta{
+  background-color: 	#708090;
+  width: 250px;
+  height: 420px;
+  text-align: center;
+  font-size: 15px;
+  margin: 5px;
+  border: 3px solid #234668;
+} */
+
+.video{
+  margin-top: 5px;
+}

@@ -1,0 +1,24 @@
+.grupo-preguntas{
+  min-width: 700px;
+  min-height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.titulo{
+  background-color: navy;
+  min-width: 500px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.app{
+  background-color: #8fbc8f;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
